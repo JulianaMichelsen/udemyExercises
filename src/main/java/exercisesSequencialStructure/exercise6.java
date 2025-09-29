@@ -8,7 +8,7 @@ d) a área do quadrado que tem lado B.
 e) a área do retângulo que tem lados A e B.
  */
 
-package exercises;
+package exercisesSequencialStructure;
 
 import java.util.Scanner;
 import java.util.Locale;

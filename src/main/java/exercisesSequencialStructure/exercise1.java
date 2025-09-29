@@ -3,7 +3,7 @@ Faça um programa para ler dois valores inteiros, e depois mostrar na tela a som
 mensagem explicativa, conforme exemplos.
  */
 
-package exercises;
+package exercisesSequencialStructure;
 
 import java.util.Scanner;
 

@@ -4,7 +4,7 @@ hora e calcula o salário desse funcionário. A seguir, mostre o número e o sal
 decimais.
  */
 
-package exercises;
+package exercisesSequencialStructure;
 
 import java.util.Scanner;
 import java.util.Locale;

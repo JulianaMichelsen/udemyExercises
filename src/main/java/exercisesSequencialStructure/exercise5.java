@@ -3,7 +3,7 @@ Fazer um programa para ler o código de uma peça 1, o número de peças 1, o va
 código de uma peça 2, o número de peças 2 e o valor unitário de cada peça 2. Calcule e mostre o valor a ser pago.
  */
 
-package exercises;
+package exercisesSequencialStructure;
 
 import java.util.Scanner;
 import java.util.Locale;

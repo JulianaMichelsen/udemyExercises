@@ -5,7 +5,7 @@ casas decimais conforme exemplos.
  Considere o valor de π = 3.14159
  */
 
-package exercises;
+package exercisesSequencialStructure;
 
 import java.util.Scanner;
 import java.util.Locale;
