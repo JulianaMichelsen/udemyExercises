@@ -1,9 +1,8 @@
 /*
-
-Faça um programa para ler dois vetores A e B, contendo N elementos cada. Em seguida, gere um
-terceiro vetor C onde cada elemento de C é a soma dos elementos correspondentes de A e B. Imprima
-o vetor C gerado.
- */
+Faça um programa para ler dois vetores A e B, contendo N elementos cada.
+Em seguida, gere um terceiro vetor C onde cada elemento de C é a soma
+dos elementos correspondentes de A e B. Imprima o vetor C gerado.
+*/
 
 package exercisesVectors;
 
@@ -14,29 +13,38 @@ public class exercise6 {
 
         Scanner scanner = new Scanner(System.in);
 
-        int quantity;
-
         System.out.print("Quantos valores vai ter cada vetor? ");
-        quantity = scanner.nextInt();
+        int quantity = scanner.nextInt();
 
-        int[] numbers = new int[quantity];
+        int[] vectorA = new int[quantity];
+        int[] vectorB = new int[quantity];
 
-        for (int i = 0; i < numbers.length; i++) {
-            System.out.print("Digite um numero: ");
-            numbers[i] = scanner.nextInt();
-        }
-        System.out.println("NUMEROS PARES");
-        int countPairs = 0;
-        for (int i = 0; i < numbers.length; i++) {
-            if (numbers[i] % 2 ==0) {
-                System.out.print(numbers[i] + " ");
-                countPairs ++;
-            }
+        System.out.println("Digite os valores do vetor A:");
+        for (int i = 0; i < quantity; i++) {
+            vectorA[i] = scanner.nextInt();
         }
 
-        System.out.println("QUANTIDADE DE PARES: " + countPairs);
+        System.out.println("Digite os valores do vetor B:");
+        for (int i = 0; i < quantity; i++) {
+            vectorB[i] = scanner.nextInt();
+        }
+
+        int[] vectorC = somaValores(vectorA, vectorB);
+
+        System.out.println("VETOR RESULTANTE:");
+        for (int i = 0; i < quantity; i++) {
+            System.out.println(vectorC[i]);
+        }
 
         scanner.close();
+    }
 
+    // Função que soma os valores correspondentes de dois vetores
+    public static int[] somaValores(int[] vetorA, int[] vetorB) {
+        int[] vetorC = new int[vetorA.length];
+        for (int i = 0; i < vetorA.length; i++) {
+            vetorC[i] = vetorA[i] + vetorB[i];
+        }
+        return vetorC;
     }
 }
